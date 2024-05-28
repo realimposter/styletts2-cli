@@ -111,7 +111,8 @@ pitch_extractor = load_F0_models(F0_path)
 # load BERT model
 from Utils.PLBERT.util import load_plbert
 
-BERT_path = config.get("PLBERT_dir", False)
+# BERT_path = config.get("PLBERT_dir", False)
+BERT_path = "/smoothie/styletts2-cli/Utils/PLBERT/"
 plbert = load_plbert(BERT_path)
 
 model_params = recursive_munch(config["model_params"])
