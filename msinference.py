@@ -31,7 +31,7 @@ import librosa
 from nltk.tokenize import word_tokenize
 
 from models import *
-from .utils import *
+from smoothie.styletts2_cli.utils import *
 from text_utils import TextCleaner
 
 textclenaer = TextCleaner()
