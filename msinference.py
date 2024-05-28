@@ -97,8 +97,10 @@ config = yaml.safe_load(open("Models/LibriTTS/config.yml"))
 # )
 
 # load pretrained ASR model
-ASR_config = config.get("ASR_config", False)
-ASR_path = config.get("ASR_path", False)
+# ASR_config = config.get("ASR_config", False)
+ASR_config = "/smoothie/styletts2-cli/Utils/ASR/config.yml"
+# ASR_path = config.get("ASR_path", False)
+ASR_path = "/smoothie/styletts2-cli/Utils/ASR/epoch_00080.pth"
 text_aligner = load_ASR_models(ASR_path, ASR_config)
 
 # load pretrained F0 model
