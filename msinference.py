@@ -104,7 +104,8 @@ ASR_path = "/smoothie/styletts2-cli/Utils/ASR/epoch_00080.pth"
 text_aligner = load_ASR_models(ASR_path, ASR_config)
 
 # load pretrained F0 model
-F0_path = config.get("F0_path", False)
+# F0_path = config.get("F0_path", False)
+F0_path = "/smoothie/styletts2-cli/Utils/JDC/bst.t7"
 pitch_extractor = load_F0_models(F0_path)
 
 # load BERT model
