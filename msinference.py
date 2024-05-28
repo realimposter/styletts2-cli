@@ -91,10 +91,10 @@ global_phonemizer = phonemizer.backend.EspeakBackend(
 # phonemizer = Phonemizer.from_checkpoint(str(cached_path('https://public-asai-dl-models.s3.eu-central-1.amazonaws.com/DeepPhonemizer/en_us_cmudict_ipa_forward.pt')))
 
 
-# config = yaml.safe_load(open("Models/LibriTTS/config.yml"))
-config = yaml.safe_load(
-    open(str(cached_path("hf://yl4579/StyleTTS2-LibriTTS/Models/LibriTTS/config.yml")))
-)
+config = yaml.safe_load(open("Models/LibriTTS/config.yml"))
+# config = yaml.safe_load(
+#     open(str(cached_path("hf://yl4579/StyleTTS2-LibriTTS/Models/LibriTTS/config.yml")))
+# )
 
 # load pretrained ASR model
 ASR_config = config.get("ASR_config", False)
